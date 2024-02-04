@@ -13,55 +13,56 @@
 
   </head>
   <body>
-     <!-- Top  Header -->
-    <div class="top_menu_bar pt-2 pb-2 bg-color">
-      <div class="container">
-        <div class="row">
-          <div class="row align-items-center justify-content-between">
-          <div class="col-lg-8 col-sm-8">
-            <div class="top_menu_bar_inner">
-              <ul>
-                <li><a href="{% url 'home' %}">REI</a></li>
-              </ul>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End of top  Header -->
-    <!---Second top menu bar--->
-    <div class="second_top_menu_bar pt-2 pb-2 bg-color">
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-sm-8">
-              <div class="second_top_menu_bar_inner">
-                <ul>
-                  <li><a href="#">Shop</a></li>
-                  <li><a href="#">Cart</a></li>
-                  <li><a href="{% url 'login' %}">Login</a></li>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="{% url 'home' %}">REI</a>
+            
+            <!-- Toggler/collapsible Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'login' %}">Login</a>
+                    </li>
                 </ul>
-              </div>
-          </div>
-          <!-- Search Bar -->
-          <div class="col-lg-4 col-sm-12 text-right">
-            <div class="search-container mr-4">
-              <input type="text" placeholder="Search..." id="search-input">
-              <button type="submit" id="search-button">Search</button>
+
+                <!-- Search Bar -->
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
-          </div>
-          <!-- End of Search Bar -->
         </div>
-      </div>
-    </div>
-    <!---End of second top menu bar--->
+    </nav>
+    <!-- End of Navbar -->
+
     <!-- Content Section -->
     <div class="container">
-      <div class="content">
-        {% block content %}
-        {% endblock %}
-      </div>
+        <!-- Your page content goes here -->
     </div>
     <!-- End of Content Section -->
-    
-</html>
+</body>
+
+    <!---End of second top menu bar--->
+    <div class="container">
+      {% block content %}
+      <!-- Content from child templates will appear here -->
+      {% endblock %}
+    </div>
+    <!-- End of Content Section -->
+  
+    <!-- Bootstrap JS and other scripts (omitted for brevity) -->
+  </body>
+  </html>
