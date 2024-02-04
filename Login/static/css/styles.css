@@ -181,3 +181,24 @@ body
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
+/* Overlay text on image */
+.image-container {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust the color as needed */
+    text-align: center;
+}
+
+/* Style for logo image in the content section */
+.logo-container {
+    text-align: center; /* Center the logo */
+    margin: 20px 0; /* Add some margin around the logo */
+}

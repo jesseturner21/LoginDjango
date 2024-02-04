@@ -2,22 +2,20 @@
 {% load static %}
 {% block title %}Home{% endblock %}
 {% block content %}
-<html>
-    <head>
-        <h1>home</h1>
-    </head>
-    <body>
-        <!--Message at the bottom of the screen-->
-        <div class="image-container">
-            <img src="{% static 'images/tree.png' %}" alt="Image">
-                <div class="text-overlay">
-                    <h2>TAKE A HIKE</h2>
-                    <p>Make this year the best year of hiking with new gear!</p>
-                </div>
-        </div>  
-        <!--End of message at the bottom of the screen--> 
-    </body>
-</html>
+    <!-- Logo Image -->
+    <div class="logo-container text-center my-4">
+        <img src="{% static 'images/logo.png' %}" alt="Logo Image" class="img-fluid">
+    </div>
 
+    <!-- Content of the home page -->
+    <div class="image-container">
+        <img src="{% static 'images/tree.png' %}" alt="Tree Image" class="img-fluid">
+        <div class="text-overlay">
+            <h2>TAKE A HIKE</h2>
+            <p>Make this year the best year of hiking with new gear!</p>
+        </div>
+    </div>  
+    <!-- End of content of the home page -->
 {% endblock %}
+
 
