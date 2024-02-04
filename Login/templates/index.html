@@ -1,8 +1,23 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}Home{% endblock %}
 {% block content %}
-{% load static %}
-<h1>home</h1>
+<html>
+    <head>
+        <h1>home</h1>
+    </head>
+    <body>
+        <!--Message at the bottom of the screen-->
+        <div class="image-container">
+            <img src="{% static 'images/tree.png' %}" alt="Image">
+                <div class="text-overlay">
+                    <h2>TAKE A HIKE</h2>
+                    <p>Make this year the best year of hiking with new gear!</p>
+                </div>
+        </div>  
+        <!--End of message at the bottom of the screen--> 
+    </body>
+</html>
 
 {% endblock %}
 
