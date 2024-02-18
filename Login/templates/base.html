@@ -28,10 +28,10 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
+                        <a class="nav-link" href="{% url 'shop' %}">Shop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cart</a>
+                        <a class="nav-link" href="{% url 'cart' %}">Cart</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'login' %}">Login</a>
@@ -53,8 +53,6 @@
         <!-- Your page content goes here -->
     </div>
     <!-- End of Content Section -->
-</body>
-
     <!---End of second top menu bar--->
     <div class="container">
       {% block content %}
@@ -65,4 +63,4 @@
   
     <!-- Bootstrap JS and other scripts (omitted for brevity) -->
   </body>
-  </html>
+</html>

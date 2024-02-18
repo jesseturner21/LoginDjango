@@ -11,6 +11,12 @@ def home(request):
 def home(request):
     return render(request, "base.html")
 
+def shop_view(request):
+    return render(request, 'shop.html')
+
+def cart_view(request):
+    return render(request, 'cart.html')
+
 
 def login_view(request):
     if request.method == 'POST':

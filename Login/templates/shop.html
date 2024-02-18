@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Shop{% endblock %}
+
+{% block content %}
+<div class="shop-page">
+    <div class="container">
+        <div class="row">
+            <!-- Products can be dynamically loaded here -->
+            <div class="col-md-4">
+                <div class="product-card">
+                    <h3>Product Name</h3>
+                    <p>Description of the product.</p>
+                    <!-- Add to cart button -->
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+            <!-- Repeat for other products -->
+        </div>
+    </div>
+</div>
+{% endblock %}
