@@ -8,9 +8,6 @@ from django.contrib import messages
 def home(request):
     return render(request, 'index.html')
 
-def home(request):
-    return render(request, "base.html")
-
 def shop_view(request):
     return render(request, 'shop.html')
 

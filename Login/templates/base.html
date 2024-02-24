@@ -13,6 +13,7 @@
 
   </head>
   <body>
+
     <!-- Bootstrap Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -34,7 +35,7 @@
                         <a class="nav-link" href="{% url 'cart' %}">Cart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'login' %}">Login</a>
+                        <a class="nav-link" href="{% url 'login' %}">Account</a>
                     </li>
                 </ul>
 
@@ -46,21 +47,11 @@
             </div>
         </div>
     </nav>
-    <!-- End of Navbar -->
-
-    <!-- Content Section -->
-    <div class="container">
-        <!-- Your page content goes here -->
-    </div>
-    <!-- End of Content Section -->
-    <!---End of second top menu bar--->
+    
     <div class="container">
       {% block content %}
       <!-- Content from child templates will appear here -->
       {% endblock %}
     </div>
-    <!-- End of Content Section -->
-  
-    <!-- Bootstrap JS and other scripts (omitted for brevity) -->
   </body>
 </html>

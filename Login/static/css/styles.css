@@ -1,97 +1,28 @@
+/* --------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------HOME PAGE-------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
 
-/* Main background color */
-body
-{
-    background-color: beige;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-/* --------------------------------- */
-/* ----------Top Menu Bar----------- */
-/* --------------------------------- */
-.top_menu_bar
-{
-    height: 100px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgb(38, 37, 37)
-}
-.top_menu_bar_inner ul
-{
-    list-style: none;
-}
-.top_menu_bar_inner ul li
-{
-    display: inline-block;
-}
-.top_menu_bar_inner ul li a
-{
-    font-size: 30px;
-    font-weight: 600;
-    margin-left: 10px;
-    color: beige;
-    margin-left: 50px;
-    margin-top: 5px;
-}
-.top_menu_bar_inner ul li a
-{
-    text-decoration: none;
-}
-/* --------------------------------- */
-/* -------Second Top Menu Bar------- */
-/* --------------------------------- */
-.second_top_menu_bar 
-{
-    height: 50px;
-    position: fixed;
-    top: 50px;
-    width: 100%;
-    background-color: rgb(60, 59, 59);
-}
-.second_top_menu_bar_inner ul
-{
-    list-style: none;
-}
-.second_top_menu_bar_inner ul li
-{
-    display: inline-block;
-}
-.second_top_menu_bar_inner ul li a
-{
-    font-size: 20px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 10px;
-    color: beige;
-    margin-left: 50px;
-    margin-top: 10px;
-}
-.second_top_menu_bar_inner ul li a
-{
-    text-decoration: none;
-}
 /* --------------------------------- */
 /* ---------Image format------------ */
 /* --------------------------------- */
-
 .image-container img
 {
-    margin-top: 43px;
     width: 100%; 
-    height: 600px;
-    filter: brightness(70%);
+    height: 700px;
+    filter: brightness(80%);
+    opacity: 0.85;
 }
 /* --------------------------------- */
 /* ---Message on bottom of screen-=- */
 /* --------------------------------- */
-.text-overlay 
+.text-overlay
 {
     position: absolute;
     top: 90%; 
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: beige; /* Text color */
+    color: white;
 }
 .text-overlay h2 
 {
@@ -104,101 +35,150 @@ body
     margin: 0;
 }
 /* --------------------------------- */
+/* ---------NavBar Format----------- */
+/* --------------------------------- */
+.navbar.navbar-light.bg-light 
+{
+    background-color: rgb(50, 74, 53) !important;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-nav .nav-link 
+{
+    color: white;
+}
+
+.navbar-light .navbar-toggler-icon 
+{
+    background-color: white; 
+}
+.navbar-light .navbar-toggler 
+{
+    border-color: white;
+}
+.navbar 
+{
+    height: 65px;
+}
+
+/* --------------------------------- */
 /* ----------Search Bar------------- */
 /* --------------------------------- */
-.search-container 
+.btn-outline-success 
 {
-    display: flex;
-    align-items: center;
+    color: white; 
+    border-color: white; 
 }
-  
-#search-input 
+.btn-outline-success:hover 
 {
-    padding: 8px;
-    font-size: 10px;
-    border: 1px solid beige;
-    border-radius: 4px;
-    margin-right: 5px;
-    background-color: beige; /* Set background color */
+    color: white; 
+    border-color: white; 
+    background-color: rgb(86, 108, 88);
 }
-  
-#search-button 
-{
-    padding: 8px 16px;
-    font-size: 10px;
-    background-color: #787a7b;
-    color: beige;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-  
-#search-button:hover 
-{
-    background-color: beige;
-}
- 
+/* --------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------LOGIN PAGE------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
+
 /* --------------------------------- */
-/* ----------Login Page------------- */
+/* -------------Login--------------- */
 /* --------------------------------- */
 .login-form
 {
-    margin-top: 100px;
-    background-color: beige;
-    border-color: beige;
-}
-.login-form-big-text
-{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-}
-.login-form-body
-{
-    background-color: beige;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
 }
 .login-form-header
 {
-    background-color: beige;
+    text-align: center;
 }
-.login-form-button
+.login-form-body 
 {
-    background-color: #a9abac;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.login-form-big-text
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
 
 }
 .login-form-small-text
 {
+    font-size: 18px;
+    margin-top: 0;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
-.login-form-border
+.login-form-button
 {
-    background-color: beige;
+    border-color: black; 
+
 }
-.mb-3
+.login-form-button:hover
+{
+    color: black; 
+    border-color: black; 
+    background-color: rgb(221, 218, 218);
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------CART PAGE------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
+.cart-page
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+.cart-big-text
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.cart-body p
 {
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
-/* Overlay text on image */
-.image-container {
-    position: relative;
-}
-
-.text-overlay {
+/* --------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------SHOP PAGE-------------------------------------------------- */
+/* --------------------------------------------------------------------------------------------------- */
+.shop-page 
+{
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; /* Adjust the color as needed */
     text-align: center;
+    white-space: nowrap;
+}
+.product-card h3
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+.product-card p
+{
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center; 
 }
 
-/* Style for logo image in the content section */
-.logo-container {
-    text-align: center; /* Center the logo */
-    margin: 20px 0; /* Add some margin around the logo */
+.btn 
+{
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+.btn:hover 
+{
+    color: black;
+    border-color: black;
+    background-color: rgb(221, 218, 218);
 }
