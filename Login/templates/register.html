@@ -13,7 +13,7 @@
                     <div class="login-form-body">
                         {% if form.errors %}
                         <div class="alert alert-danger">
-                            <p>One or more of the required boxes are blank.</p>
+                            <p>One or more of the required fields are blank or errors have occurred.</p>
                         </div>
                         {% endif %}
                         <form method="post">
@@ -23,18 +23,22 @@
                                 {{ form.username }}
                             </div>
                             <div class="mb-3">
-                                {{ form.password.label_tag }}
-                                {{ form.password }}
-                            </div>
-                            <div class="mb-3">
                                 {{ form.email.label_tag }}
                                 {{ form.email }}
+                            </div>
+                            <div class="mb-3">
+                                {{ form.password1.label_tag }}
+                                {{ form.password1 }}
+                            </div>
+                            <div class="mb-3">
+                                {{ form.password2.label_tag }}
+                                {{ form.password2 }}
                             </div>
                             <div class="mb-3">
                                 {{ form.phonenumber.label_tag }}
                                 {{ form.phonenumber }}
                             </div>
-                            <button type="submit" class="btn login-form-button">Login</button>
+                            <button type="submit" class="btn login-form-button">Register</button>
                         </form>
                     </div>
                 </div>
