@@ -14,9 +14,12 @@ class RegisterForm(forms.Form):
 
     def clean(self):
         cleaned_data = super().clean()
+
+        # Extract passwords
         password1 = cleaned_data.get("password1")
         password2 = cleaned_data.get("password2")
 
+        # Check if passwords match
         if password1 and password2 and password1 != password2:
             self.add_error("password2", "The two password fields must match.")
 
@@ -25,4 +28,5 @@ class RegisterForm(forms.Form):
         if username and User.objects.filter(username=username).exists():
             self.add_error("username", "A user with that username already exists.")
 
+        # Return data after validation
         return cleaned_data
