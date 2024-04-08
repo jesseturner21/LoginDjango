@@ -1,4 +1,4 @@
-# LOGINDJANGO
+# LOGIN DJANGO
 
 This is a simple Django application that provides authentication features including user login and sign up.
 
